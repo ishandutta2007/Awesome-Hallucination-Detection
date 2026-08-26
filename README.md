@@ -24,59 +24,26 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-* **[Patronus AI](https://www.patronus.ai/)**
-  AI evaluation and reliability platform with specialized hallucination evaluators including Lynx, which evaluates whether LLM responses are grounded in supplied context.
-
-* **[Galileo AI](https://galileo.ai/)**
-  LLM evaluation and observability platform providing quality and safety evaluation capabilities for generative-AI applications, including RAG and hallucination-related metrics.
-
-* **[Fiddler AI](https://www.fiddler.ai/)**
-  AI observability and evaluation platform providing monitoring, explainability, quality, safety, and performance analysis for machine-learning and generative-AI systems.
-
-* **[Arize AI](https://arize.com/)**
-  AI observability and evaluation platform with Phoenix and managed offerings for LLM tracing, evaluation, RAG quality, and hallucination/faithfulness analysis.
-
-* **[WhyLabs](https://whylabs.ai/)**
-  AI observability and monitoring platform focused on detecting data, model, and LLM quality problems in production systems.
-
-* **[Aporia](https://www.aporia.com/)**
-  AI observability and guardrails platform providing monitoring and protection for LLM applications, including hallucination and reliability-related controls.
-
-* **[Cleanlab](https://cleanlab.ai/)**
-  AI quality platform focused on identifying unreliable data and model outputs, with tooling for evaluating LLM/RAG systems and benchmarking hallucination-detection models.
-
-* **[Vectara](https://www.vectara.com/)**
-  Grounded-generation and RAG platform offering the Hallucination Evaluation Model (HHEM), a specialized model for evaluating whether generated responses are supported by retrieved context.
-
-* **[NVIDIA NeMo](https://developer.nvidia.com/nemo)**
-  NVIDIA's generative-AI development and evaluation ecosystem. NeMo Guardrails and NeMo evaluation tooling can be used to evaluate, constrain, and monitor LLM outputs.
-
-* **[Truera](https://truera.com/)**
-  AI quality and explainability platform whose open-source TruLens project provides evaluation and tracing for LLM applications, including groundedness and RAG metrics.
-
-* **[Confident AI](https://www.confident-ai.com/)**
-  Hosted platform around DeepEval for continuous LLM evaluation, testing, debugging, and monitoring, including hallucination and faithfulness evaluation.
-
-* **[LangSmith](https://www.langchain.com/langsmith)**
-  LLM engineering and observability platform with tracing, datasets, experiments, evaluators, and production monitoring useful for identifying hallucinations and grounding failures.
-
-* **[Weights & Biases Weave](https://wandb.ai/site/weave/)**
-  LLM evaluation and observability platform supporting tracing, evaluations, datasets, scoring, and analysis of AI application behavior.
-
-* **[Comet Opik](https://www.comet.com/docs/opik/)**
-  LLM observability and evaluation platform for tracing and testing AI applications, including RAG and agent evaluation.
-
-* **[Humanloop](https://humanloop.com/)**
-  LLM evaluation and observability platform supporting experiments, evaluations, feedback, and production-quality monitoring.
-
-* **[Braintrust](https://www.braintrust.dev/)**
-  AI evaluation and observability platform supporting automated evaluations, datasets, experiments, scoring, tracing, and production monitoring.
-
-* **[Langfuse Cloud](https://langfuse.com/)**
-  Hosted LLM engineering and observability platform supporting traces, evaluations, datasets, prompt management, and custom quality metrics.
-
-* **[Patronus Lynx](https://www.patronus.ai/lynx)**
-  Specialized hallucination-detection model from Patronus designed to identify responses that are not grounded in supplied context.
+| Platform / Product | Description & Hallucination Focus | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Patronus AI](https://www.patronus.ai/)** | AI evaluation and reliability platform with specialized hallucination evaluators (Lynx) to verify if responses are grounded in context. | $10.00 / 1,000 API calls (Pay-as-you-go API) | $5.00 free API credits upon signup + 45-minute evaluation strategy session |
+| **[Galileo AI](https://galileo.ai/)** | LLM evaluation and observability platform providing quality/safety evaluation, RAG metrics, and hallucination scoring. | $100.00 / month (Pro plan; $0.002 / trace overage) | Free plan with 5,000 traces/month and access to core evaluation metrics |
+| **[Fiddler AI](https://www.fiddler.ai/)** | AI observability and evaluation platform with real-time guardrails for hallucination, faithfulness, and safety scoring. | $0.002 / trace (Developer plan) | Free Forever plan for Fiddler Guardrails (real-time safety scoring, faithfulness, prompt injection & PII detection) |
+| **[Arize AI](https://arize.com/)** | AI observability and evaluation platform with Phoenix integration for LLM tracing, RAG quality, and faithfulness analysis. | $50.00 / month (AX Pro plan; $0.001 / span overage) | Free plan (AX Free) with 25,000 trace spans/month, 1 GB storage, 15-day retention, and unlimited seats/evals |
+| **[WhyLabs](https://whylabs.ai/)** | AI observability and monitoring platform for detecting data, model, and LLM quality/groundedness failures in production. | $0.00 (Fully transitioned to 100% open-source via `whylogs` & `langkit`) | 100% free open-source with unlimited predictions, models, and traces |
+| **[Aporia](https://www.aporia.com/)** | AI observability and guardrails platform offering real-time monitoring and mitigation for LLM hallucinations. | $99.00 / month (Starter plan via Coralogix) | 14-day free trial (no credit card required) + Free Community tier for prototype projects |
+| **[Cleanlab](https://cleanlab.ai/)** | AI quality platform and Trustworthy Language Model (TLM) API for detecting unreliable outputs and scoring RAG trustworthiness. | $0.001 / evaluation (TLM Lite / pay-per-token API tier) | Free tier with up to 5,000 data points in Cleanlab Studio + free initial TLM API credits |
+| **[Vectara](https://www.vectara.com/)** | Grounded-generation and RAG platform with built-in Hallucination Evaluation Model (HHEM) to score answer-context grounding. | $100,000.00 / year (~$8,333.33/month for production SaaS tier) | 30-day free trial with 10,000 platform credits, agent creation, retrieval workflows, and HHEM evaluation |
+| **[NVIDIA NeMo](https://developer.nvidia.com/nemo)** | Generative-AI development and guardrails ecosystem to constrain, evaluate, and monitor LLM outputs for hallucinations. | $1.00 / GPU hour (pay-as-you-go) or $4,500.00 / GPU / year (NVIDIA AI Enterprise) | 90-day free trial of NVIDIA AI Enterprise; core NeMo open-source framework is 100% free |
+| **[Truera](https://truera.com/)** | AI quality and explainability platform (acquired by Snowflake) powering the open-source TruLens RAG Triad groundedness evaluator. | $0.00 (TruLens open-source; Snowflake AI Observability billed at standard Snowflake credit rates) | 100% free open-source TruLens library + 30-day Snowflake trial with $400 free credits for managed Cortex AI Observability |
+| **[Confident AI](https://www.confident-ai.com/)** | Hosted continuous evaluation and monitoring platform built around DeepEval for hallucination and faithfulness testing. | $200.00 / month (Starter plan with unlimited seats, 5 projects, 5 GB-month traces; $1/GB-month overage) | Free tier ($0/month) with 2 seats, 1 project, 5 test runs/week, 1 GB-month trace spans (~100k traces), and 1-week retention |
+| **[LangSmith](https://www.langchain.com/langsmith)** | LLM engineering and observability platform with tracing, datasets, automated evaluators, and production hallucination monitoring. | $39.00 / seat / month (Plus tier; $0.50 / 1,000 traces overage) | Free Developer plan with 1 user seat, 5,000 traces/month, and 14-day data retention |
+| **[Weights & Biases Weave](https://wandb.ai/site/weave/)** | LLM evaluation and observability toolkit providing execution tracing, dataset benchmarking, and custom hallucination scoring. | $50.00 / user / month (W&B Models/Weave Teams plan; additional ingestion at $0.10/MB) | Free Forever personal/academic plan with 1 user seat, 100 GB storage, and full access to Weave traces/evals |
+| **[Comet Opik](https://www.comet.com/docs/opik/)** | LLM observability and evaluation platform for tracing, testing, and evaluating RAG pipelines and agent hallucination rates. | $19.00 / month (Pro plan with up to 50 team members and 100,000 spans/month) | Free Cloud plan with up to 10 team members, 25,000 spans/month, and 60-day data retention (Self-hosted is 100% free) |
+| **[Humanloop](https://humanloop.com/)** | Prompt engineering, evaluation, and observability platform supporting automated feedback and production hallucination tracking. | $400.00 / month (Team plan) | 14-day free trial with 2 team members, 50 evaluation runs, and 10,000 logs/month |
+| **[Braintrust](https://www.braintrust.dev/)** | AI evaluation and observability platform supporting automated evaluations, scoring, datasets, and live production tracing. | $249.00 / month (Pro plan with 5 GB/month data, 50k scores/month, 30-day retention, unlimited seats) | Free Starter plan ($0/month, no credit card required) with 1 GB data/month, 10,000 scores/month, unlimited users, and 14-day retention |
+| **[Langfuse Cloud](https://langfuse.com/)** | Hosted LLM engineering and observability platform supporting trace scoring, custom evaluators, and hallucination metrics. | $29.00 / month (Core plan with 100,000 units/month, 90-day retention, unlimited users; $8/100k units overage) | Free Hobby plan with 50,000 units/month, 2 users, and 30-day data retention (Self-hosted is 100% free) |
+| **[Patronus Lynx](https://www.patronus.ai/lynx)** | Specialized hallucination detection model family (8B & 70B) for verifying response groundedness against reference documents. | $0.00 for open-source model weights (or $10.00 / 1,000 calls via Patronus RemoteEvaluator API) | 100% free open weights (CC-BY-NC-4.0) for local/Ollama inference + $5.00 free API credits on Patronus Cloud |
 
 ## Open-Source GitHub Projects
 
