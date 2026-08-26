@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Accent Gradient Cyan-Purple -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe; #4facfe; #7F00FF; #00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#9b51e0">
+        <animate attributeName="stop-color" values="#9b51e0; #00f2fe; #ff007f; #9b51e0" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ff007f">
+        <animate attributeName="stop-color" values="#ff007f; #9b51e0; #00f2fe; #ff007f" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Emerald Truth Gradient -->
+    <linearGradient id="truthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #94a3b8;
+        letter-spacing: 0.3px;
+      }
+      .tag-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+      .grid-line {
+        stroke: #1e293b;
+        stroke-width: 1;
+        opacity: 0.4;
+      }
+      .pulse-circle {
+        animation: pulseRing 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        transform-origin: center;
+      }
+      .scanner-beam {
+        animation: scanSweep 6s ease-in-out infinite alternate;
+      }
+      .radar-sweep {
+        animation: rotateRadar 10s linear infinite;
+        transform-origin: 1020px 180px;
+      }
+      .float-node {
+        animation: floatAnim 5s ease-in-out infinite alternate;
+      }
+      @keyframes pulseRing {
+        0% { r: 35px; opacity: 0.8; stroke-width: 2px; }
+        50% { r: 65px; opacity: 0.3; stroke-width: 1px; }
+        100% { r: 95px; opacity: 0; stroke-width: 0.5px; }
+      }
+      @keyframes scanSweep {
+        0% { transform: translateY(-40px); opacity: 0.2; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(40px); opacity: 0.2; }
+      }
+      @keyframes rotateRadar {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes floatAnim {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Border Glow -->
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="url(#glowGrad)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Geometric Grid Background -->
+  <g class="grid-pattern">
+    <line x1="60" y1="0" x2="60" y2="360" class="grid-line"/>
+    <line x1="180" y1="0" x2="180" y2="360" class="grid-line"/>
+    <line x1="300" y1="0" x2="300" y2="360" class="grid-line"/>
+    <line x1="420" y1="0" x2="420" y2="360" class="grid-line"/>
+    <line x1="540" y1="0" x2="540" y2="360" class="grid-line"/>
+    <line x1="660" y1="0" x2="660" y2="360" class="grid-line"/>
+    <line x1="780" y1="0" x2="780" y2="360" class="grid-line"/>
+    <line x1="900" y1="0" x2="900" y2="360" class="grid-line"/>
+    <line x1="1020" y1="0" x2="1020" y2="360" class="grid-line"/>
+    <line x1="1140" y1="0" x2="1140" y2="360" class="grid-line"/>
+    
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line"/>
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line"/>
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line"/>
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line"/>
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line"/>
+  </g>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="200" cy="100" r="140" fill="#00f2fe" opacity="0.08" filter="url(#neonGlow)"/>
+  <circle cx="1020" cy="180" r="160" fill="#7F00FF" opacity="0.12" filter="url(#neonGlow)"/>
+  <circle cx="650" cy="280" r="100" fill="#10b981" opacity="0.06" filter="url(#neonGlow)"/>
+
+  <!-- Futuristic Radar/Scanner on the Right -->
+  <g transform="translate(1020, 180)">
+    <!-- Radar concentric rings -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#334155" stroke-width="1" opacity="0.4"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#9b51e0" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="0" cy="0" r="20" fill="#00f2fe" opacity="0.15"/>
+
+    <!-- Pulse Waves -->
+    <circle cx="0" cy="0" r="35" class="pulse-circle" fill="none" stroke="#00f2fe" opacity="0.7"/>
+    <circle cx="0" cy="0" r="35" class="pulse-circle" fill="none" stroke="#9b51e0" opacity="0.7" style="animation-delay: 2s;"/>
+
+    <!-- Crosshairs -->
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#00f2fe" stroke-width="1" opacity="0.35" stroke-dasharray="4 4"/>
+    <line x1="0" y1="-120" x2="0" y2="120" stroke="#00f2fe" stroke-width="1" opacity="0.35" stroke-dasharray="4 4"/>
+
+    <!-- Rotating Radar Sweep Line -->
+    <g class="radar-sweep">
+      <line x1="0" y1="0" x2="105" y2="-30" stroke="url(#glowGrad)" stroke-width="2" filter="url(#subtleGlow)"/>
+      <polygon points="0,0 110,-35 110,-5" fill="#00f2fe" opacity="0.08"/>
+    </g>
+
+    <!-- Verified Truth Target Nodes -->
+    <g class="float-node">
+      <circle cx="45" cy="-55" r="4.5" fill="#10b981" filter="url(#subtleGlow)"/>
+      <circle cx="-50" cy="40" r="3.5" fill="#00f2fe" filter="url(#subtleGlow)"/>
+      <circle cx="65" cy="45" r="3.5" fill="#f43f5e" filter="url(#subtleGlow)"/>
+      <!-- Small data label -->
+      <text x="54" y="-52" font-family="monospace" font-size="9" fill="#10b981" font-weight="600">FAITHFUL: 99.8%</text>
+      <text x="74" y="48" font-family="monospace" font-size="9" fill="#f43f5e" font-weight="600">HALLUCINATION</text>
+    </g>
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 65)">
+      <rect width="260" height="28" rx="14" fill="#0f172a" stroke="url(#glowGrad)" stroke-width="1.2"/>
+      <circle cx="16" cy="14" r="5" fill="#10b981" filter="url(#subtleGlow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="19" class="tag-text" fill="#38bdf8">LLM RELIABILITY &amp; RAG EVAL</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" class="title-text" fill="#ffffff" filter="url(#subtleGlow)">
+      Awesome <tspan fill="url(#glowGrad)">Hallucination</tspan> Detection
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="185" class="subtitle-text">
+      The Curated Ecosystem for Groundedness, Faithfulness, Factuality &amp; Guardrails
+    </text>
+
+    <!-- Tech Feature Tags -->
+    <g transform="translate(0, 225)">
+      <!-- Item 1: Faithfulness -->
+      <rect x="0" y="0" width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">🛡️ Guardrails</text>
+
+      <!-- Item 2: Groundedness -->
+      <rect x="155" y="0" width="165" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="169" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#34d399">🎯 RAG Grounding</text>
+
+      <!-- Item 3: Observability -->
+      <rect x="330" y="0" width="170" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="344" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#c084fc">🔍 AI Observability</text>
+
+      <!-- Item 4: Benchmarks -->
+      <rect x="510" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="524" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#fb7185">📊 Benchmarks</text>
+    </g>
+
+    <!-- Bottom Meta Line -->
+    <g transform="translate(0, 290)">
+      <text font-family="monospace" font-size="12" fill="#64748b">
+        ⚡ PRODUCTION-READY SAAS &amp; OPEN-SOURCE PIPELINES • UPDATED AUGUST 2026
+      </text>
+    </g>
+  </g>
+</svg>
